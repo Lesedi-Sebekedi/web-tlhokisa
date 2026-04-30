@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Tlhokisa Medical Services</title>
+    <meta name="description" content="Contact Tlhokisa Medical Services to request a consultation, view clinic hours, and find our Mahikeng location." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">Tlhokisa <span>Medical Services</span></a>
+        <button class="nav-toggle" data-nav-toggle type="button">Menu</button>
+        <nav class="nav" data-nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="faqs.html">FAQs</a>
+          <a class="active" href="contact.html">Contact</a>
+          <a class="btn btn-primary" href="contact.html">Book Consultation</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="page-title">
+        <p class="eyebrow">Contact</p>
+        <h1>Book a private consultation</h1>
+      </section>
+
+      <section class="card-grid">
+        <article class="card">
+          <h3>Call</h3>
+          <p class="muted">+27 83 742 5768</p>
+          <h3>Email</h3>
+          <p class="muted">masiranye@gmail.com</p>
+        </article>
+        <article class="card">
+          <h3>Location</h3>
+          <p class="muted">11 Robison Street(Opposite Mahikeng Library), Mahikeng, North West, South Africa</p>
+          <p><a class="btn btn-secondary" href="https://maps.google.com" target="_blank" rel="noopener noreferrer">Open Map</a></p>
+        </article>
+        <article class="card">
+          <h3>Hours</h3>
+          <p class="muted">Mon-Fri: 09:00-17:00<br />Saturday: 09:00-14:00<br />Sunday/Public Holidays: Closed</p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Request an Appointment</h2>
+        <form id="contact-form" novalidate>
+          <label for="full-name">Full Name</label>
+          <input id="full-name" name="full-name" required />
+
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" />
+
+          <label for="message">How can we help?</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <div class="checkbox-row">
+            <input id="consent" name="consent" type="checkbox" required />
+            <label for="consent" class="muted">
+              I consent to the collection and processing of my information for contact and
+              appointment-related communication.
+            </label>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Submit Inquiry</button>
+          <p id="form-status" class="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Emergency notice</h3>
+          <p class="muted">For urgent or life-threatening symptoms, call emergency services immediately.</p>
+        </div>
+        <div>
+          <h3>Quick links</h3>
+          <p><a href="services.html">View Services</a></p>
+        </div>
+        <div class="footer-links">
+          <h3>Legal</h3>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms</a>
+          <a href="medical-disclaimer.html">Medical Disclaimer</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
