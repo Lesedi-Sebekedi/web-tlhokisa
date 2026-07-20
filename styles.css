@@ -246,9 +246,11 @@ textarea {
 }
 
 .footer-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .footer-links a {
@@ -259,9 +261,14 @@ textarea {
 
 @media (max-width: 900px) {
   .hero-grid,
-  .card-grid,
-  .footer-grid {
+  .card-grid {
     grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
   }
 
   .nav-toggle {
